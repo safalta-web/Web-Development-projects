@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div>
+    <header><h1>The Online Store</h1></header>
+     </div>
+    <nav>
+      <div id="loading">Loading Categories....</div>
+    </nav>
+    <main>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2" id="item" scope="colgroup">Item</th>
+          <th id="desc" scope="col">Description</th>
+          <th id="price" scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="4">choose a filter category above</td>
+          <div id="loadingCategories">Loading Categories....</div>
+        </tr>
+      </tbody>
+    </table>
+    <section class="datail-wrapper hidden">
+      <section class="detail-container">
+        <div class="flex crossbtn">
+          <span><button onclick="hideDetail()" >X</button></span>
+        </div>
+         <div class="header flex">
+            <span class="name"></span>
+            <span class="price"></span>
+         </div>
+         <div class="main flex">
+         <div class = 'gallery-container'>
+            <div class=" current-image"></div>
+            <div class="thumbnail_image wrap"></div>
+         </div>
+         <div>
+            <p class="text-container"></p>
+            <div class="flex-col">
+               <label class="flex label-flex" for="">
+               <span>Size:</span>
+               <select name="sizes" class="sizes">
+                <option disabled selected> Choose your size </option>
+               </select>
+               </label>
+               <label class="flex label-flex" for=""><span>Color:</span>
+               <select name="colors" class="colors">
+                <option disabled selected>Choose your color</option>
+               </select>
+               </label>
+               <label class="flex label-flex" for=""><span>Qty</span>
+                 <select name="qty">
+                  <option disabled selected>Choose your quantity</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                 </select>
+               </label>
+               <button onclick="hideDetail()"> Buy Now</button>
+            </div>
+         </div>
+      </section>
+   </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
