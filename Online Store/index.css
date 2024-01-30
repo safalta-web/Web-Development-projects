@@ -1,0 +1,250 @@
+body {
+  width: 80%;
+  margin: auto;
+  padding: 0 1rem 0 1rem;
+}
+
+nav {
+  border: 2px solid grey;
+  border-radius: 10px;
+  background-color: rgba(231, 229, 229, 0.732);
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+  position:relative;
+}
+
+#loading {
+  border: 2px solid rgb(87, 174, 87);
+  background-color: rgb(87, 174, 87);
+  border-radius: 10px;
+  padding: 4px;
+  margin: auto;
+  width: fit-content;
+  display: none;
+}
+#loadingCategories {
+  border: 2px solid rgb(87, 174, 87);
+  background-color: rgb(87, 174, 87);
+  border-radius: 10px;
+  padding: 4px;
+  margin: auto;
+  width: fit-content;
+  display: none;
+}
+table {
+ width:80%;
+  margin:auto;
+  border-collapse: collapse;
+  position:relative;
+
+
+}
+table th {
+  width: 20em;
+}
+table tr td {
+  text-align: center;
+
+}
+
+table th {
+  border-bottom: 2px solid rgb(178, 172, 172);
+}
+.itemImage {
+  width: 100px;
+  position: relative;
+}
+.hovering:hover{
+  background-color: rgb(228, 228, 146);
+}
+.itemImage:hover{
+  border: 2px solid rgb(81, 205, 81);
+}
+.photo{
+  width:20px;
+}
+
+.gallery-container{
+  /* text-align: center; */
+  /* width: 40%; */
+  margin:0 auto;
+  padding: 20px 20px 20px 0;
+}
+.text-container {
+  /* width: 70%; */
+  margin-left: 1rem;
+}
+.current-image img{              
+  /* max-width: 90%; */
+  size: contain;
+  height:auto;
+  width: fit-content;
+  /* max-width: 40%; */
+}
+.thumbnail_image{
+  display: flex;
+ /* flex-wrap: wrap;  */
+  /* wraps as screen wraps */
+  justify-content:center; 
+  gap:10px;
+}
+.thumbnail_image img{
+  max-width:100px;
+  height:auto;
+  cursor:pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+/* * highlight the selected thumbnail image */ 
+.thumbnail_image img:hover,
+.thumbnail_image img:focus{
+  border-color: blue;
+}
+.thumbnail_image img.active {   
+  border-color: blue;
+  opacity: 0.3;
+}
+
+.flex {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+@media only screen and (max-width: 600px) {
+  .flex {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .current-image img{              
+    max-width: fit-content;
+    size: contain;
+    height:auto;
+    width: fit-content;
+     max-width: 100%;
+  }
+
+  .wrap{
+    display: grid;
+     grid-template-columns: auto auto ; 
+    align-items: start;
+    justify-content: start;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    width:60%;
+    /* size:40svh */
+
+  }
+  .thumbnail_image{
+   
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+
+
+}
+
+
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+  .flex {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .current-image img{              
+    max-width: fit-content;
+    size: contain;
+    height:auto;
+    width: fit-content;
+     max-width: 100%;
+  }
+
+  .wrap{
+    display: flex;
+     /* grid-template-columns: auto auto ;  */
+     flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    width:60%;
+    /* size:40svh */
+
+  }
+  .thumbnail_image{
+   
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+
+
+}
+.flex.wrap {
+  display: flex;
+  /* grid-template-columns:auto auto ; */
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 40px;
+}
+.flex-col {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  margin-left:1em;
+  
+}
+.detail-container {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: rgb(168, 125, 125);
+  padding:20px;
+}
+
+
+
+.detail-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  font-weight: 600;
+}
+
+.header {
+  border-bottom: 3px solid;
+}
+.label-flex {
+  gap: 20px;
+  width: 50px;
+}
+.label-flex span {
+  width: 50%;
+}
+.label-flex input {
+  width: 50%;
+}
+
+.hidden {
+  display: none;
+}
+.crossbtn{
+ display: flex;
+ justify-content: right;
+ margin-bottom:0.7rem
+}
