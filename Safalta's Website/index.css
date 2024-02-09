@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.overall{
+    width:100%;
+    min-width: 100vh;
+    position:relative;
+}
+.logo{
+  width:140px;
+  margin-right:10%;
+  border-top-right-radius:20px;
+  border-bottom-left-radius:20px;
+}
+nav{
+    padding:30px 10px;
+    display:flex;
+    align-items: center;
+    justify-content:center; 
+}
+ 
+nav ul li{
+   list-style: none;
+   display:inline-block;
+    margin:0px 60px;
+
+}
+ nav ul li a {
+    text-decoration: none;
+    color:#333;
+    
+}
+.info {
+    width:500px;
+    margin-top: 5%;
+}
+.info h1{
+    margin-bottom:5%;
+    color:#363434;
+    font-size:130px; 
+    animation-delay:0.1s;
+    
+}
+.info p{
+    color:#726a6a;
+    font-size:20px;
+    font-family:Tahoma, sans-serif;
+    animation-delay:0.3s;
+
+
+}
+.contacts{
+margin-top:2%;
+
+}
+.contacts .contact{
+    margin-right: 30px;
+    animation-delay:0.4s;
+
+}
+.contacts img{
+    height:30px;
+}
+.contact .anime{
+    animation: delay 0.7s;
+}
+.welcome{
+    margin-left:20px;
+}
+.me{
+    position:absolute;
+    bottom:0;
+    right:10px; 
+    margin-right:100px;
+  
+}
+.me img{
+  width:300px;
+  height:450px;
+}
+.me .apple{
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px; 
+}
+.me .anime{
+    animation-delay:0.9s;
+}
+
+.anime{
+    opacity:0;
+    transform:translateY(30px);
+    animation: moveup 0.5s linear forwards;
+   
+}
+@keyframes moveup{
+    100%{
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
